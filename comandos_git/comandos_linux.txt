@@ -1,3 +1,7 @@
 git add comandos_git/comandos_linux.txt
 git commit -m "inicialicé el archivo comandos linux"
 git status
+
+ git restore : elmina el cambio
+
+  git restore --staged: restaura el paso anterior
