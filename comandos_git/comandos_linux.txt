@@ -5,3 +5,7 @@ git status
  git restore : elmina el cambio
 
   git restore --staged: restaura el paso anterior
+
+  git reset --soft id_De_cambio : elima el commit pero preserva el cambio 
+  git reset --hard id_De_cambio : elima el commit y a la vez el cambio en el documento 
+
