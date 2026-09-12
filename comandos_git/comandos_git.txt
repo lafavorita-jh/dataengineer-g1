@@ -1,0 +1,1 @@
+"git switch -c monandos_git" para cambiar la línea de trabajo
