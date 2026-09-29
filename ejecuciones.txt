@@ -1,0 +1,268 @@
+Fecha: 2026-09-12
+# comandos ejecutados en la git bash
+
+
+hp@DESKTOP-T7STFSG MINGW64 ~
+$ cd /d/
+
+hp@DESKTOP-T7STFSG MINGW64 /d
+$ cd dataengineer-g1/
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git log --online
+fatal: unrecognized argument: --online
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   comandos_git/comandos_linux.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ code .
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git switch -c monandos_git
+Switched to a new branch 'monandos_git'
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git status
+On branch monandos_git
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   comandos_git/comandos_linux.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_git/comandos_git.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git add comandos_git/comandos_git.txt
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git status
+On branch monandos_git
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   comandos_git/comandos_git.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   comandos_git/comandos_linux.txt
+
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git commit -m "cree ela rchivo comandos_git.txt"
+[monandos_git 00a670e] cree ela rchivo comandos_git.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 comandos_git/comandos_git.txt
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git status
+On branch monandos_git
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   comandos_git/comandos_linux.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git add comandos_git/comandos_linux.txt
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git status
+On branch monandos_git
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos_git/comandos_linux.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git status
+On branch monandos_git
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos_git/comandos_linux.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git log --oneline
+00a670e (HEAD -> monandos_git) cree ela rchivo comandos_git.txt
+0a5d3bb (main) Agregué comandos git restore; git restore --staged
+d1f58db Agregué .env .gitignore y la carpeta data con un iris.csv
+bc37254 Agregué el comando git add y commid que son secuenciales
+fcac459 inicialicé el archivo comandos linux
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git switch main
+M       .gitignore
+M       comandos_git/comandos_linux.txt
+Switched to branch 'main'
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git branch
+* main
+  monandos_git
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git merge comandos_git
+merge: comandos_git - not something we can merge
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git merge comandos_git
+merge: comandos_git - not something we can merge
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git merge momandos_git
+merge: momandos_git - not something we can merge
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git merge ^[[200~monandos_git
+merge: monandos_git - not something we can merge
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git branch
+* main
+  monandos_git
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git merge monandos_git
+Updating 0a5d3bb..00a670e
+Fast-forward
+ comandos_git/comandos_git.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 comandos_git/comandos_git.txt
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git switch -c monandos_git
+fatal: a branch named 'monandos_git' already exists
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git switch monandos_git
+M       .gitignore
+M       comandos_git/comandos_linux.txt
+Switched to branch 'monandos_git'
+mmm
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git switch main
+M       .gitignore
+M       comandos_git/comandos_linux.txt
+Switched to branch 'main'
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos_git/comandos_linux.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_git/comandos_v.txt
+
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git ad comandos_git/comandos_v.txt
+git: 'ad' is not a git command. See 'git --help'.
+
+The most similar commands are
+        add
+        am
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git add comandos_git/comandos_v.txt
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git commit "Cree el comandos v"
+error: pathspec 'Cree el comandos v' did not match any file(s) known to git
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git switch monandos_git
+M       .gitignore
+M       comandos_git/comandos_linux.txt
+A       comandos_git/comandos_v.txt
+Switched to branch 'monandos_git'
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (monandos_git)
+$ git switch main
+M       .gitignore
+M       comandos_git/comandos_linux.txt
+A       comandos_git/comandos_v.txt
+Switched to branch 'main'
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git branch
+* main
+  monandos_git
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git branch -d monandos_git
+Deleted branch monandos_git (was 00a670e).
+
+hp@DESKTOP-T7STFSG MINGW64 /d/dataengineer-g1 (main)
+$ git branch
+* main
+
+
+
+# Comandos ejecutados en la terminal abierta como administrador para conectar hit hub
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS C:\Windows\system32> ssh-keygen -t ed25519 -C "lafavoritasti@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (C:\Users\hp/.ssh/id_ed25519):
+Created directory 'C:\\Users\\hp/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\hp/.ssh/id_ed25519
+Your public key has been saved in C:\Users\hp/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:Jd3t1mXqevFAP1SFMCknKKfXwW8VKVnsstDr+QTI2wE lafavoritasti@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|         o  o*o+o|
+|      . o.=.=o= .|
+|       +..EB.+. +|
+|      . .+oo=.o=.|
+|       .S ooo==..|
+|           oo=o..|
+|          ....o+.|
+|            oo. .|
+|            .o.  |
++----[SHA256]-----+
+PS C:\Windows\system32> Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+PS C:\Windows\system32> Start-Service ssh-agent
+PS C:\Windows\system32> ssh-add c:/Users/hp/.ssh/id_ed25519
+Identity added: c:/Users/hp/.ssh/id_ed25519 (lafavoritasti@gmail.com)
+PS C:\Windows\system32>
